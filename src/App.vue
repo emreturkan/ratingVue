@@ -46,7 +46,7 @@ export default {
   },
   methods:{
     getData(){
-      axios.get(`https://api.themoviedb.org/3/account/9850288/rated/movies?api_key=9d107d4813dc3bd9f2afaa908e7fd901&language=tr-TR&session_id=b12ccc4125d883d5069b30b5c06cf1a9660fa12c&sort_by=created_at.asc&page=${this.pageNumber}`).then(res=> {
+      axios.get(`https://api.themoviedb.org/3/account/9850288/rated/movies?api_key=9d107d4813dc3bd9f2afaa908e7fd901&language=tr-TR&session_id=b12ccc4125d883d5069b30b5c06cf1a9660fa12c&sort_by=created_at.desc&page=${this.pageNumber}`).then(res=> {
       console.log(res.data.results);
       this.movieList = res.data.results;
       console.log(this.pageNumber);

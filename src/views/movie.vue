@@ -123,9 +123,6 @@ export default {
       setTimeout(() => {
         ScrollReveal().reveal(".movie", { duration: 1000, reset: true });
       }, 1000);
-      setTimeout(() => {
-        ScrollReveal().reveal(".image", { duration: 1000, reset: true });
-      }, 1200);
     },
     walkText() {
       var options = {

@@ -121,7 +121,7 @@ export default {
     },
     scAnime() {
       setTimeout(() => {
-        ScrollReveal().reveal(".movie", { duration: 1000, reset: true });
+        ScrollReveal().reveal(".image", { reset:true, duration: 1000 });
       }, 1000);
     },
     walkText() {
